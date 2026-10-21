@@ -48,8 +48,18 @@ export function numbersToDigits(text: string): string {
 const STOPWORDS = new Set([
   "the", "a", "an", "of", "to", "and", "or", "is", "are", "was", "were", "it",
   "its", "in", "on", "for", "we", "our", "they", "their", "that", "this",
-  "i", "think", "its", "maybe", "um", "uh", "answer",
+  "i", "think", "maybe", "um", "uh", "answer", "because", "there", "has",
+  "have", "had", "be", "been", "being", "by", "from", "as", "at",
 ]);
+
+/** Small derivational/irregular families so "he wrote X" matches "writer of X". */
+const MORPH: Record<string, string> = {
+  wrote: "write", writer: "write", writers: "write", written: "write", writes: "write", writing: "write",
+  founded: "found", founder: "found", founders: "found", founding: "found",
+  served: "serve", serves: "serve", serving: "serve",
+  freed: "free", freeing: "free",
+  elected: "elect", elects: "elect", election: "elect", elections: "elect",
+};
 
 /** Full normalization pipeline producing comparable token strings. */
 export function canonical(input: string): string {
@@ -63,11 +73,12 @@ export function canonical(input: string): string {
   return text;
 }
 
-/** Tokens with stopwords removed (keeps digits). */
+/** Tokens with stopwords removed and morphological families collapsed (keeps digits). */
 export function contentTokens(input: string): string[] {
   return canonical(input)
     .split(" ")
-    .filter((t) => t.length > 0 && !STOPWORDS.has(t));
+    .filter((t) => t.length > 0 && !STOPWORDS.has(t))
+    .map((t) => MORPH[t] ?? t);
 }
 
 /**

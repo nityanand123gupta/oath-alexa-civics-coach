@@ -1,14 +1,18 @@
 import type { CivicsQuestion, MatchVerdict } from "./types.js";
 import { canonical, contentTokens, expandOfficialAnswer } from "./normalize.js";
 
-/** Dice coefficient over token sets. */
-function tokenSetSimilarity(a: string[], b: string[]): number {
-  if (a.length === 0 || b.length === 0) return 0;
-  const setA = new Set(a);
-  const setB = new Set(b);
-  let overlap = 0;
-  for (const t of setA) if (setB.has(t)) overlap++;
-  return (2 * overlap) / (setA.size + setB.size);
+/**
+ * Fraction of the official variant's content tokens that appear in the user's
+ * answer. Asymmetric on purpose: the user must cover the official answer, but
+ * may say extra words. Symmetric similarity (e.g. Dice) is unsafe here — it
+ * would score "to spread communism" ≈ "to stop the spread of communism".
+ */
+function variantCoverage(userTokens: string[], variantTokens: string[]): number {
+  if (variantTokens.length === 0) return 0;
+  const user = new Set(userTokens);
+  let covered = 0;
+  for (const t of new Set(variantTokens)) if (user.has(t)) covered++;
+  return covered / new Set(variantTokens).size;
 }
 
 function hasDigit(s: string): boolean {
@@ -56,9 +60,10 @@ export function matchesVariant(userCanonical: string, userTokens: string[], vari
   // Token-set: all content tokens of the variant are present (handles word-order).
   if (variantTokens.length > 0 && variantTokens.every((t) => userTokens.includes(t))) return true;
 
-  // Fuzzy fallback for multi-word answers only (≥2 content tokens): Dice ≥ 0.8
-  if (variantTokens.length >= 2 && !hasDigit(variant)) {
-    if (tokenSetSimilarity(userTokens, variantTokens) >= 0.8) return true;
+  // Coverage fallback for long official answers (4+ content tokens): the user
+  // may drop at most ~one filler token. Never applied to numeric answers.
+  if (variantTokens.length >= 4 && !hasDigit(variant)) {
+    if (variantCoverage(userTokens, variantTokens) >= 0.8) return true;
   }
   return false;
 }
