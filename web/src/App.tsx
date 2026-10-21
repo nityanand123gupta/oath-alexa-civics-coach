@@ -88,7 +88,10 @@ export function App() {
     );
   }, []);
 
+  const lastAssistantRef = useRef<string>("");
+
   const say = useCallback((text: string, thenListen: boolean) => {
+    lastAssistantRef.current = text;
     if (!voiceOnRef.current) {
       setState("idle");
       if (thenListen) recognizerRef.current?.start();
@@ -129,6 +132,12 @@ export function App() {
           const bye = "Okay, session ended. Ask for your readiness anytime.";
           setTurns((t) => [...t, { role: "assistant", text: bye }]);
           say(bye, false);
+          return;
+        }
+        if (routed.action === "repeat") {
+          const again = lastAssistantRef.current || "Nothing to repeat yet.";
+          setTurns((t) => [...t, { role: "assistant", text: again }]);
+          say(again, true);
           return;
         }
         setTurns((t) => [...t, { role: "assistant", text: HELP_TEXT }]);
@@ -280,6 +289,12 @@ export function App() {
           <div className="dock">
             <div
               className={`ring-wrap ${state}`}
+              role="button"
+              aria-label={state === "listening" ? "Stop listening" : "Talk to Oath"}
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") (e.currentTarget as HTMLElement).click();
+              }}
               onClick={() => {
                 if (state === "speaking") {
                   stopSpeaking();

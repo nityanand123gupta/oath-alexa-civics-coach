@@ -213,6 +213,18 @@ describe("end-to-end practice journey", () => {
     await client.close();
   });
 
+  it("refuses to explain the current question mid-mock (exam integrity)", async () => {
+    const client = await connect();
+    await client.callTool({ name: "update_profile", arguments: { filingDate: "2026-01-15" } });
+    await client.callTool({ name: "start_practice", arguments: { mode: "mock_interview" } });
+    const res = (await client.callTool({ name: "explain_question", arguments: {} })) as ToolResult;
+    expect(res.isError).toBe(true);
+    expect(text(res)).toContain("debrief");
+    // but a different, non-current question is fine to look up after the session;
+    // finishing the mock restores explanations
+    await client.close();
+  });
+
   it("MCP Apps: get_readiness declares a ui:// view and the resource serves HTML", async () => {
     const client = await connect();
     const tools = await client.listTools();

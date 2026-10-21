@@ -632,6 +632,24 @@ export function buildMcpServer(deps: McpDeps): McpServer {
     async ({ questionNumber }) => {
       const { version } = profileContext();
       const bank = bankFor(version);
+      // Exam integrity: never reveal the current question's answers mid-mock.
+      if (
+        activeExam &&
+        activeExam.mode === "mock_interview" &&
+        !activeExam.finished &&
+        (questionNumber == null ||
+          bank.questions.find((x) => x.number === questionNumber)?.id === currentQuestionId(activeExam))
+      ) {
+        return {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "Not during a mock interview — the real officer won't explain either! Answer as best you can; you'll get a full debrief with every official answer when we finish.",
+            },
+          ],
+        };
+      }
       let q: CivicsQuestion | undefined;
       if (questionNumber != null) {
         q = bank.questions.find((x) => x.number === questionNumber);

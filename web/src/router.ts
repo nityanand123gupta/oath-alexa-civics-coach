@@ -6,7 +6,7 @@
 
 export type Routed =
   | { kind: "tool"; name: string; args: Record<string, unknown>; local?: undefined }
-  | { kind: "local"; action: "setup" | "protocol" | "stop" | "help" }
+  | { kind: "local"; action: "setup" | "protocol" | "stop" | "help" | "repeat" }
   | { kind: "answer"; answer: string };
 
 const MONTHS: Record<string, string> = {
@@ -93,7 +93,11 @@ export function route(utterance: string, inSession: boolean): Routed {
     return { kind: "local", action: "help" };
   }
 
-  // In-session: explanation requests pass through, everything else is an answer
+  // In-session: repeats and explanation requests pass through,
+  // everything else is treated as the learner's answer.
+  if (/^(repeat( the question)?|say (that |it )?again|pardon( me)?|one more time)$/.test(t)) {
+    return { kind: "local", action: "repeat" };
+  }
   const explainNow = t.match(/^explain(?: that| this| it)?$/);
   if (explainNow) return { kind: "tool", name: "explain_question", args: {} };
   return { kind: "answer", answer: utterance };
