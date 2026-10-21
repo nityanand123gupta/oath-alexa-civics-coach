@@ -1,0 +1,29 @@
+{
+  "name": "oath",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Oath — citizenship interview coach for Alexa+. Self-hosted MCP server (spec 2025-11-25, Streamable HTTP) + simulated Alexa+ voice client.",
+  "type": "module",
+  "workspaces": [
+    "packages/civics-kit",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build -w @oath/civics-kit && npm run build -w @oath/server && npm run build -w @oath/web",
+    "dev": "npm run dev -w @oath/server",
+    "dev:web": "npm run dev -w @oath/web",
+    "start": "node server/dist/index.js",
+    "test": "vitest run",
+    "eval": "npm run eval -w @oath/civics-kit",
+    "typecheck": "tsc -b packages/civics-kit server"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "tsx": "^4.20.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

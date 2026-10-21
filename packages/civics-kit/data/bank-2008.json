@@ -1,0 +1,1503 @@
+{
+  "version": "2008",
+  "officialSource": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/100q.pdf",
+  "retrieved": "2026-10-21",
+  "testMechanics": {
+    "questionsAsked": 10,
+    "passAt": 6,
+    "failAt": 5,
+    "earlyStop": true,
+    "senior6520": {
+      "designatedOnly": true,
+      "questionsAsked": 10,
+      "passAt": 6
+    }
+  },
+  "categories": [
+    "American Government",
+    "American History",
+    "Integrated Civics"
+  ],
+  "questions": [
+    {
+      "id": "2008-001",
+      "number": 1,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is the supreme law of the land?",
+      "acceptableAnswers": [
+        "the Constitution"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-002",
+      "number": 2,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What does the Constitution do?",
+      "acceptableAnswers": [
+        "sets up the government",
+        "defines the government",
+        "protects basic rights of Americans"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-003",
+      "number": 3,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "The idea of self-government is in the first three words of the Constitution. What are these words?",
+      "acceptableAnswers": [
+        "We the People"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-004",
+      "number": 4,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is an amendment?",
+      "acceptableAnswers": [
+        "a change (to the Constitution)",
+        "an addition (to the Constitution)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-005",
+      "number": 5,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What do we call the first ten amendments to the Constitution?",
+      "acceptableAnswers": [
+        "the Bill of Rights"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-006",
+      "number": 6,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is one right or freedom from the First Amendment?",
+      "acceptableAnswers": [
+        "speech",
+        "religion",
+        "assembly",
+        "press",
+        "petition the government"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-007",
+      "number": 7,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "How many amendments does the Constitution have?",
+      "acceptableAnswers": [
+        "twenty-seven (27)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-008",
+      "number": 8,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What did the Declaration of Independence do?",
+      "acceptableAnswers": [
+        "announced our independence (from Great Britain)",
+        "declared our independence (from Great Britain)",
+        "said that the United States is free (from Great Britain)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-009",
+      "number": 9,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What are two rights in the Declaration of Independence?",
+      "acceptableAnswers": [
+        "life",
+        "liberty",
+        "pursuit of happiness"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-010",
+      "number": 10,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is freedom of religion?",
+      "acceptableAnswers": [
+        "You can practice any religion, or not practice a religion."
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-011",
+      "number": 11,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is the economic system in the United States?",
+      "acceptableAnswers": [
+        "capitalist economy",
+        "market economy"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-012",
+      "number": 12,
+      "category": "American Government",
+      "subcategory": "A: Principles of American Democracy",
+      "question": "What is the “rule of law”?",
+      "acceptableAnswers": [
+        "Everyone must follow the law.",
+        "Leaders must obey the law.",
+        "Government must obey the law.",
+        "No one is above the law."
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-013",
+      "number": 13,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Name one branch or part of the government.",
+      "acceptableAnswers": [
+        "Congress",
+        "legislative",
+        "President",
+        "executive",
+        "the courts",
+        "judicial"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-014",
+      "number": 14,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What stops one branch of government from becoming too powerful?",
+      "acceptableAnswers": [
+        "checks and balances",
+        "separation of powers"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-015",
+      "number": 15,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who is in charge of the executive branch?",
+      "acceptableAnswers": [
+        "the President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-016",
+      "number": 16,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who makes federal laws?",
+      "acceptableAnswers": [
+        "Congress",
+        "Senate and House (of Representatives)",
+        "(U.S. or national) legislature"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-017",
+      "number": 17,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What are the two parts of the U.S. Congress?",
+      "acceptableAnswers": [
+        "the Senate and House (of Representatives)"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-018",
+      "number": 18,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "How many U.S. Senators are there?",
+      "acceptableAnswers": [
+        "one hundred (100)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-019",
+      "number": 19,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "We elect a U.S. Senator for how many years?",
+      "acceptableAnswers": [
+        "six (6)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-020",
+      "number": 20,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who is one of your state’s U.S. Senators now?",
+      "acceptableAnswers": [
+        "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]"
+      ],
+      "senior": true,
+      "dynamic": true,
+      "dynamicNote": "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]"
+    },
+    {
+      "id": "2008-021",
+      "number": 21,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "The House of Representatives has how many voting members?",
+      "acceptableAnswers": [
+        "four hundred thirty-five (435)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-022",
+      "number": 22,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "We elect a U.S. Representative for how many years?",
+      "acceptableAnswers": [
+        "two (2)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-023",
+      "number": 23,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Name your U.S. Representative.",
+      "acceptableAnswers": [
+        "Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner. Also acceptable is any statement that the territory has no (voting) Representatives in Congress.]"
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner. Also acceptable is any statement that the territory has no (voting) Representatives in Congress.]"
+    },
+    {
+      "id": "2008-024",
+      "number": 24,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who does a U.S. Senator represent?",
+      "acceptableAnswers": [
+        "all people of the state"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-025",
+      "number": 25,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Why do some states have more Representatives than other states?",
+      "acceptableAnswers": [
+        "(because of) the state’s population",
+        "(because) they have more people",
+        "(because) some states have more people"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-026",
+      "number": 26,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "We elect a President for how many years?",
+      "acceptableAnswers": [
+        "four (4)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-027",
+      "number": 27,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "In what month do we vote for President?",
+      "acceptableAnswers": [
+        "November"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-028",
+      "number": 28,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the name of the President of the United States now?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the name of the President of the United States."
+      ],
+      "senior": true,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the name of the President of the United States."
+    },
+    {
+      "id": "2008-029",
+      "number": 29,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the name of the Vice President of the United States now?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States."
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States."
+    },
+    {
+      "id": "2008-030",
+      "number": 30,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "If the President can no longer serve, who becomes President?",
+      "acceptableAnswers": [
+        "the Vice President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-031",
+      "number": 31,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "If both the President and the Vice President can no longer serve, who becomes President?",
+      "acceptableAnswers": [
+        "the Speaker of the House"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-032",
+      "number": 32,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who is the Commander in Chief of the military?",
+      "acceptableAnswers": [
+        "the President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-033",
+      "number": 33,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who signs bills to become laws?",
+      "acceptableAnswers": [
+        "the President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-034",
+      "number": 34,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who vetoes bills?",
+      "acceptableAnswers": [
+        "the President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-035",
+      "number": 35,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What does the President’s Cabinet do?",
+      "acceptableAnswers": [
+        "advises the President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-036",
+      "number": 36,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What are two Cabinet-level positions?",
+      "acceptableAnswers": [
+        "Secretary of Agriculture",
+        "Secretary of Commerce",
+        "Secretary of Defense",
+        "Secretary of Education",
+        "Secretary of Energy",
+        "Secretary of Health and Human Services",
+        "Secretary of Homeland Security",
+        "Secretary of Housing and Urban Development",
+        "Secretary of the Interior",
+        "Secretary of Labor",
+        "Secretary of State",
+        "Secretary of Transportation",
+        "Secretary of the Treasury",
+        "Secretary of Veterans Affairs",
+        "Attorney General",
+        "Vice President"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-037",
+      "number": 37,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What does the judicial branch do?",
+      "acceptableAnswers": [
+        "reviews laws",
+        "explains laws",
+        "resolves disputes (disagreements)",
+        "decides if a law goes against the Constitution"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-038",
+      "number": 38,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the highest court in the United States?",
+      "acceptableAnswers": [
+        "the Supreme Court"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-039",
+      "number": 39,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "How many justices are on the Supreme Court?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court."
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court."
+    },
+    {
+      "id": "2008-040",
+      "number": 40,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who is the Chief Justice of the United States now?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States."
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States."
+    },
+    {
+      "id": "2008-041",
+      "number": 41,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
+      "acceptableAnswers": [
+        "to print money",
+        "to declare war",
+        "to create an army",
+        "to make treaties"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-042",
+      "number": 42,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Under our Constitution, some powers belong to the states. What is one power of the states?",
+      "acceptableAnswers": [
+        "provide schooling and education",
+        "provide protection (police)",
+        "provide safety (fire departments)",
+        "give a driver’s license",
+        "approve zoning and land use"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-043",
+      "number": 43,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "Who is the Governor of your state now?",
+      "acceptableAnswers": [
+        "Answers will vary. [District of Columbia residents should answer that D.C. does not have a Governor.]"
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Answers will vary. [District of Columbia residents should answer that D.C. does not have a Governor.]"
+    },
+    {
+      "id": "2008-044",
+      "number": 44,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the capital of your state?",
+      "acceptableAnswers": [
+        "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a capital. Residents of U.S. territories should name the capital of the territory.]"
+      ],
+      "senior": true,
+      "dynamic": true,
+      "dynamicNote": "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a capital. Residents of U.S. territories should name the capital of the territory.]"
+    },
+    {
+      "id": "2008-045",
+      "number": 45,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What are the two major political parties in the United States?",
+      "acceptableAnswers": [
+        "Democratic and Republican"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-046",
+      "number": 46,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the political party of the President now?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the political party of the President."
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the political party of the President."
+    },
+    {
+      "id": "2008-047",
+      "number": 47,
+      "category": "American Government",
+      "subcategory": "B: System of Government",
+      "question": "What is the name of the Speaker of the House of Representatives now?",
+      "acceptableAnswers": [
+        "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives."
+      ],
+      "senior": false,
+      "dynamic": true,
+      "dynamicNote": "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives."
+    },
+    {
+      "id": "2008-048",
+      "number": 48,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "There are four amendments to the Constitution about who can vote. Describe one of them.",
+      "acceptableAnswers": [
+        "Citizens eighteen (18) and older (can vote).",
+        "You don’t have to pay (a poll tax) to vote.",
+        "Any citizen can vote. (Women and men can vote.)",
+        "A male citizen of any race (can vote)."
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-049",
+      "number": 49,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "What is one responsibility that is only for United States citizens?",
+      "acceptableAnswers": [
+        "serve on a jury",
+        "vote in a federal election"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-050",
+      "number": 50,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "Name one right only for United States citizens.",
+      "acceptableAnswers": [
+        "vote in a federal election",
+        "run for federal office"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-051",
+      "number": 51,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "What are two rights of everyone living in the United States?",
+      "acceptableAnswers": [
+        "freedom of expression",
+        "freedom of speech",
+        "freedom of assembly",
+        "freedom to petition the government",
+        "freedom of religion",
+        "the right to bear arms"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-052",
+      "number": 52,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "What do we show loyalty to when we say the Pledge of Allegiance?",
+      "acceptableAnswers": [
+        "the United States",
+        "the flag"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-053",
+      "number": 53,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "What is one promise you make when you become a United States citizen?",
+      "acceptableAnswers": [
+        "give up loyalty to other countries",
+        "defend the Constitution and laws of the United States",
+        "obey the laws of the United States",
+        "serve in the U.S. military (if needed)",
+        "serve (do important work for) the nation (if needed)",
+        "be loyal to the United States"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-054",
+      "number": 54,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "How old do citizens have to be to vote for President?",
+      "acceptableAnswers": [
+        "eighteen (18) and older"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-055",
+      "number": 55,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "What are two ways that Americans can participate in their democracy?",
+      "acceptableAnswers": [
+        "vote",
+        "join a political party",
+        "help with a campaign",
+        "join a civic group",
+        "join a community group",
+        "give an elected official your opinion on an issue",
+        "call Senators and Representatives",
+        "publicly support or oppose an issue or policy",
+        "run for office",
+        "write to a newspaper"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-056",
+      "number": 56,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "When is the last day you can send in federal income tax forms?",
+      "acceptableAnswers": [
+        "April 15"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-057",
+      "number": 57,
+      "category": "American Government",
+      "subcategory": "C: Rights and Responsibilities",
+      "question": "When must all men register for the Selective Service?",
+      "acceptableAnswers": [
+        "at age eighteen (18)",
+        "between eighteen (18) and twenty-six (26)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-058",
+      "number": 58,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "What is one reason colonists came to America?",
+      "acceptableAnswers": [
+        "freedom",
+        "political liberty",
+        "religious freedom",
+        "economic opportunity",
+        "practice their religion",
+        "escape persecution"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-059",
+      "number": 59,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "Who lived in America before the Europeans arrived?",
+      "acceptableAnswers": [
+        "American Indians",
+        "Native Americans"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-060",
+      "number": 60,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "What group of people was taken to America and sold as slaves?",
+      "acceptableAnswers": [
+        "Africans",
+        "people from Africa"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-061",
+      "number": 61,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "Why did the colonists fight the British?",
+      "acceptableAnswers": [
+        "because of high taxes (taxation without representation)",
+        "because the British army stayed in their houses (boarding, quartering)",
+        "because they didn’t have self-government"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-062",
+      "number": 62,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "Who wrote the Declaration of Independence?",
+      "acceptableAnswers": [
+        "(Thomas) Jefferson"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-063",
+      "number": 63,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "When was the Declaration of Independence adopted?",
+      "acceptableAnswers": [
+        "July 4, 1776"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-064",
+      "number": 64,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "There were 13 original states. Name three.",
+      "acceptableAnswers": [
+        "New Hampshire",
+        "Massachusetts",
+        "Rhode Island",
+        "Connecticut",
+        "New York",
+        "New Jersey",
+        "Pennsylvania",
+        "Delaware",
+        "Maryland",
+        "Virginia",
+        "North Carolina",
+        "South Carolina",
+        "Georgia"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-065",
+      "number": 65,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "What happened at the Constitutional Convention?",
+      "acceptableAnswers": [
+        "The Constitution was written.",
+        "The Founding Fathers wrote the Constitution."
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-066",
+      "number": 66,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "When was the Constitution written?",
+      "acceptableAnswers": [
+        "1787"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-067",
+      "number": 67,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+      "acceptableAnswers": [
+        "(James) Madison",
+        "(Alexander) Hamilton",
+        "(John) Jay",
+        "Publius"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-068",
+      "number": 68,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "What is one thing Benjamin Franklin is famous for?",
+      "acceptableAnswers": [
+        "U.S. diplomat",
+        "oldest member of the Constitutional Convention",
+        "first Postmaster General of the United States",
+        "writer of “Poor Richard’s Almanac”",
+        "started the first free libraries"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-069",
+      "number": 69,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "Who is the “Father of Our Country”?",
+      "acceptableAnswers": [
+        "(George) Washington"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-070",
+      "number": 70,
+      "category": "American History",
+      "subcategory": "A: Colonial Period and Independence",
+      "question": "Who was the first President?",
+      "acceptableAnswers": [
+        "(George) Washington"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-071",
+      "number": 71,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "What territory did the United States buy from France in 1803?",
+      "acceptableAnswers": [
+        "the Louisiana Territory",
+        "Louisiana"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-072",
+      "number": 72,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "Name one war fought by the United States in the 1800s.",
+      "acceptableAnswers": [
+        "War of 1812",
+        "Mexican-American War",
+        "Civil War",
+        "Spanish-American War"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-073",
+      "number": 73,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "Name the U.S. war between the North and the South.",
+      "acceptableAnswers": [
+        "the Civil War",
+        "the War between the States"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-074",
+      "number": 74,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "Name one problem that led to the Civil War.",
+      "acceptableAnswers": [
+        "slavery",
+        "economic reasons",
+        "states’ rights"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-075",
+      "number": 75,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "What was one important thing that Abraham Lincoln did?",
+      "acceptableAnswers": [
+        "freed the slaves (Emancipation Proclamation)",
+        "saved (or preserved) the Union",
+        "led the United States during the Civil War"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-076",
+      "number": 76,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "What did the Emancipation Proclamation do?",
+      "acceptableAnswers": [
+        "freed the slaves",
+        "freed slaves in the Confederacy",
+        "freed slaves in the Confederate states",
+        "freed slaves in most Southern states"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-077",
+      "number": 77,
+      "category": "American History",
+      "subcategory": "B: 1800s",
+      "question": "What did Susan B. Anthony do?",
+      "acceptableAnswers": [
+        "fought for women’s rights",
+        "fought for civil rights"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-078",
+      "number": 78,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Name one war fought by the United States in the 1900s.",
+      "acceptableAnswers": [
+        "World War I",
+        "World War II",
+        "Korean War",
+        "Vietnam War",
+        "(Persian) Gulf War"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-079",
+      "number": 79,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Who was President during World War I?",
+      "acceptableAnswers": [
+        "(Woodrow) Wilson"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-080",
+      "number": 80,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Who was President during the Great Depression and World War II?",
+      "acceptableAnswers": [
+        "(Franklin) Roosevelt"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-081",
+      "number": 81,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Who did the United States fight in World War II?",
+      "acceptableAnswers": [
+        "Japan, Germany, and Italy"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-082",
+      "number": 82,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Before he was President, Eisenhower was a general. What war was he in?",
+      "acceptableAnswers": [
+        "World War II"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-083",
+      "number": 83,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "During the Cold War, what was the main concern of the United States?",
+      "acceptableAnswers": [
+        "Communism"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-084",
+      "number": 84,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "What movement tried to end racial discrimination?",
+      "acceptableAnswers": [
+        "civil rights (movement)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-085",
+      "number": 85,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "What did Martin Luther King, Jr. do?",
+      "acceptableAnswers": [
+        "fought for civil rights",
+        "worked for equality for all Americans"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-086",
+      "number": 86,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "What major event happened on September 11, 2001, in the United States?",
+      "acceptableAnswers": [
+        "Terrorists attacked the United States."
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-087",
+      "number": 87,
+      "category": "American History",
+      "subcategory": "C: Recent American History and Other Important Historical Information",
+      "question": "Name one American Indian tribe in the United States.",
+      "acceptableAnswers": [
+        "Cherokee",
+        "Navajo",
+        "Sioux",
+        "Chippewa",
+        "Choctaw",
+        "Pueblo",
+        "Apache",
+        "Iroquois",
+        "Creek",
+        "Blackfeet",
+        "Seminole",
+        "Cheyenne",
+        "Arawak",
+        "Shawnee",
+        "Mohegan",
+        "Huron",
+        "Oneida",
+        "Lakota",
+        "Crow",
+        "Teton",
+        "Hopi",
+        "Inuit"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-088",
+      "number": 88,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "Name one of the two longest rivers in the United States.",
+      "acceptableAnswers": [
+        "Missouri (River)",
+        "Mississippi (River)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-089",
+      "number": 89,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "What ocean is on the West Coast of the United States?",
+      "acceptableAnswers": [
+        "Pacific (Ocean)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-090",
+      "number": 90,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "What ocean is on the East Coast of the United States?",
+      "acceptableAnswers": [
+        "Atlantic (Ocean)"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-091",
+      "number": 91,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "Name one U.S. territory.",
+      "acceptableAnswers": [
+        "Puerto Rico",
+        "U.S. Virgin Islands",
+        "American Samoa",
+        "Northern Mariana Islands",
+        "Guam"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-092",
+      "number": 92,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "Name one state that borders Canada.",
+      "acceptableAnswers": [
+        "Maine",
+        "New Hampshire",
+        "Vermont",
+        "New York",
+        "Pennsylvania",
+        "Ohio",
+        "Michigan",
+        "Minnesota",
+        "North Dakota",
+        "Montana",
+        "Idaho",
+        "Washington",
+        "Alaska"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-093",
+      "number": 93,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "Name one state that borders Mexico.",
+      "acceptableAnswers": [
+        "California",
+        "Arizona",
+        "New Mexico",
+        "Texas"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-094",
+      "number": 94,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "What is the capital of the United States?",
+      "acceptableAnswers": [
+        "Washington, D.C."
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-095",
+      "number": 95,
+      "category": "Integrated Civics",
+      "subcategory": "A: Geography",
+      "question": "Where is the Statue of Liberty?",
+      "acceptableAnswers": [
+        "New York (Harbor)",
+        "Liberty Island",
+        "New Jersey",
+        "near New York City",
+        "on the Hudson (River)"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-096",
+      "number": 96,
+      "category": "Integrated Civics",
+      "subcategory": "B: Symbols",
+      "question": "Why does the flag have 13 stripes?",
+      "acceptableAnswers": [
+        "because there were 13 original colonies",
+        "because the stripes represent the original colonies"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-097",
+      "number": 97,
+      "category": "Integrated Civics",
+      "subcategory": "B: Symbols",
+      "question": "Why does the flag have 50 stars?",
+      "acceptableAnswers": [
+        "because there is one star for each state",
+        "because each star represents a state",
+        "because there are 50 states"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-098",
+      "number": 98,
+      "category": "Integrated Civics",
+      "subcategory": "B: Symbols",
+      "question": "What is the name of the national anthem?",
+      "acceptableAnswers": [
+        "The Star-Spangled Banner"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-099",
+      "number": 99,
+      "category": "Integrated Civics",
+      "subcategory": "C: Holidays",
+      "question": "When do we celebrate Independence Day?",
+      "acceptableAnswers": [
+        "July 4"
+      ],
+      "senior": true,
+      "dynamic": false,
+      "dynamicNote": null
+    },
+    {
+      "id": "2008-100",
+      "number": 100,
+      "category": "Integrated Civics",
+      "subcategory": "C: Holidays",
+      "question": "Name two national U.S. holidays.",
+      "acceptableAnswers": [
+        "New Year’s Day",
+        "Martin Luther King, Jr. Day",
+        "Presidents’ Day",
+        "Memorial Day",
+        "Independence Day",
+        "Labor Day",
+        "Columbus Day",
+        "Veterans Day",
+        "Thanksgiving",
+        "Christmas"
+      ],
+      "senior": false,
+      "dynamic": false,
+      "dynamicNote": null
+    }
+  ]
+}

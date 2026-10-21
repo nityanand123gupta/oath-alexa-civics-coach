@@ -1,0 +1,31 @@
+{
+  "name": "@oath/civics-kit",
+  "version": "1.0.0",
+  "description": "Official USCIS naturalization civics test engine: both question banks (2008 & 2025), deterministic answer matching, SM-2 spaced repetition, authentic mock-interview rules (early stop), and seeded Monte Carlo readiness estimation. Dependency-free TypeScript.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./data/bank-2008.json": "./data/bank-2008.json",
+    "./data/bank-2025.json": "./data/bank-2025.json"
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "eval": "tsx tests/eval/run-eval.ts"
+  },
+  "keywords": [
+    "uscis",
+    "civics",
+    "naturalization",
+    "citizenship",
+    "spaced-repetition",
+    "test-prep"
+  ]
+}
