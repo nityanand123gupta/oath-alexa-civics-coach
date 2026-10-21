@@ -23,6 +23,7 @@ import {
 } from "@oath/civics-kit";
 import type { Store } from "./store.js";
 import { explainQuestion } from "./explanation.js";
+import { READINESS_VIEW_URI, RESOURCE_URI_META_KEY, registerAppViews } from "./apps.js";
 
 export interface McpDeps {
   store: Store;
@@ -503,6 +504,9 @@ export function buildMcpServer(deps: McpDeps): McpServer {
       title: "Estimate interview readiness",
       description:
         "Runs a seeded Monte Carlo simulation (default 10,000 runs) of the learner's actual upcoming exam — correct version, question counts, and early-stop rules — against their measured per-question mastery. Returns pass probability, category breakdown, weakest questions, and coverage.",
+      // MCP Apps (SEP-1865): hosts that support ui:// views render the
+      // server-shipped readiness dashboard for this tool's results.
+      _meta: { [RESOURCE_URI_META_KEY]: READINESS_VIEW_URI },
       inputSchema: {
         simulations: z.number().int().min(100).max(50000).optional(),
       },
@@ -706,6 +710,8 @@ export function buildMcpServer(deps: McpDeps): McpServer {
       };
     }
   );
+
+  registerAppViews(server);
 
   return server;
 }

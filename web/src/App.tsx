@@ -3,8 +3,16 @@ import { OathMcp, type ProtocolEvent } from "./mcp";
 import { createRecognizer, speak, sttSupported, stopSpeaking } from "./voice";
 import { route, HELP_TEXT } from "./router";
 import { CardStack } from "./components/Cards";
+import { AppFrame } from "./components/AppFrame";
 import { ProtocolPanel } from "./components/ProtocolPanel";
 import { SetupModal, type SetupValues } from "./components/SetupModal";
+
+interface AppView {
+  uri: string;
+  html: string;
+  args: Record<string, unknown>;
+  result: Record<string, unknown>;
+}
 
 type AssistantState = "idle" | "listening" | "thinking" | "speaking";
 interface Turn {
@@ -26,6 +34,9 @@ export function App() {
   const [inSession, setInSession] = useState(false);
   const [events, setEvents] = useState<ProtocolEvent[]>([]);
   const [protocolOpen, setProtocolOpen] = useState(true);
+  const [appView, setAppView] = useState<AppView | null>(null);
+  const [appViewReady, setAppViewReady] = useState(false);
+  const [appViewFailed, setAppViewFailed] = useState(false);
   const [setupOpen, setSetupOpen] = useState(false);
   const [voiceOn, setVoiceOn] = useState(true);
   const [textInput, setTextInput] = useState("");
@@ -139,6 +150,29 @@ export function App() {
           return;
         }
         if (res.structured) setCard(res.structured);
+
+        // MCP Apps: if this tool declares a ui:// view, fetch it from the server
+        // and render it through the app bridge (native card is the fallback).
+        const viewUri = mcp.toolViewUris[call.name];
+        if (viewUri && res.structured) {
+          try {
+            const resource = await mcp.readResource(viewUri);
+            if (resource) {
+              setAppViewReady(false);
+              setAppViewFailed(false);
+              setAppView({
+                uri: viewUri,
+                html: resource.text,
+                args: call.args,
+                result: { content: [{ type: "text", text: res.text }], structuredContent: res.structured },
+              });
+            }
+          } catch {
+            setAppView(null);
+          }
+        } else {
+          setAppView(null);
+        }
 
         const s = res.structured as { started?: boolean; finished?: boolean } | null;
         let nowInSession = inSessionRef.current;
@@ -290,7 +324,22 @@ export function App() {
 
         <section className="col">
           <div className="cardcol">
-            <CardStack structured={card} />
+            {appView && !appViewFailed && (
+              <div>
+                <div className="mcpapp-badge">
+                  ⚡ MCP App — server-shipped view <code>{appView.uri}</code> rendered via the app bridge
+                </div>
+                <AppFrame
+                  html={appView.html}
+                  client={mcp.sdkClient}
+                  toolArgs={appView.args}
+                  toolResult={appView.result}
+                  onReady={() => setAppViewReady(true)}
+                  onFail={() => setAppViewFailed(true)}
+                />
+              </div>
+            )}
+            {(!appView || appViewFailed || !appViewReady) && <CardStack structured={card} />}
             {!card && (
               <div className="card">
                 <h3>Welcome</h3>

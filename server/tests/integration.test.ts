@@ -213,6 +213,33 @@ describe("end-to-end practice journey", () => {
     await client.close();
   });
 
+  it("MCP Apps: get_readiness declares a ui:// view and the resource serves HTML", async () => {
+    const client = await connect();
+    const tools = await client.listTools();
+    const readiness = tools.tools.find((t) => t.name === "get_readiness")!;
+    const meta = (readiness as { _meta?: Record<string, unknown> })._meta ?? {};
+    expect(meta["ui/resourceUri"]).toBe("ui://oath/readiness.html");
+
+    const resources = await client.listResources();
+    const uris = resources.resources.map((r) => r.uri);
+    expect(uris).toContain("ui://oath/readiness.html");
+
+    const read = await client.readResource({ uri: "ui://oath/readiness.html" });
+    const first = read.contents[0] as { mimeType?: string; text?: string };
+    expect(first.mimeType).toBe("text/html;profile=mcp-app");
+    expect(first.text).toContain("PostMessageTransport");
+    expect(first.text).toContain("ontoolresult");
+    await client.close();
+  });
+
+  it("serves the ext-apps view runtime with CORS for sandboxed views", async () => {
+    const res = await fetch(`http://localhost:${server.port}/vendor/ext-apps.js`);
+    expect(res.status).toBe(200);
+    expect(res.headers.get("access-control-allow-origin")).toBe("*");
+    const body = await res.text();
+    expect(body.length).toBeGreaterThan(100000);
+  });
+
   it("explain_question localizes to Spanish", async () => {
     const client = await connect();
     await client.callTool({ name: "update_profile", arguments: { explanationLanguage: "es" } });

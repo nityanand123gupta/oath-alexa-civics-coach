@@ -88,6 +88,16 @@ export async function startServer(opts: { port?: number; storeFile?: string } = 
   app.get("/mcp", handleSessionRequest);
   app.delete("/mcp", handleSessionRequest);
 
+  // Official MCP Apps view runtime (App + PostMessageTransport), served to
+  // sandboxed ui:// views. CORS open because sandboxed iframes have an opaque
+  // origin ("Origin: null") and ES-module imports are CORS-gated.
+  const extAppsBundle = join(here, "..", "..", "node_modules", "@modelcontextprotocol", "ext-apps", "dist", "src", "app-with-deps.js");
+  app.get("/vendor/ext-apps.js", (_req, res) => {
+    res.set("Access-Control-Allow-Origin", "*");
+    res.set("Content-Type", "text/javascript");
+    res.sendFile(extAppsBundle);
+  });
+
   // health + metadata for the demo client
   app.get("/api/health", (_req, res) => {
     res.json({

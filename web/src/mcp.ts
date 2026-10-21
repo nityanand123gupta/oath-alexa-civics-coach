@@ -107,10 +107,34 @@ export class OathMcp {
     this.protocolVersion = "2025-11-25";
     const tools = await client.listTools();
     this.toolNames = tools.tools.map((t) => t.name);
+    for (const t of tools.tools) {
+      const meta = (t as { _meta?: Record<string, unknown> })._meta;
+      const uri = (meta?.["ui/resourceUri"] ?? (meta?.ui as { resourceUri?: string } | undefined)?.resourceUri) as
+        | string
+        | undefined;
+      if (uri) this.toolViewUris[t.name] = uri;
+    }
   }
 
   get connected(): boolean {
     return this.client !== null;
+  }
+
+  /** Underlying SDK client (for the MCP Apps bridge + resources). */
+  get sdkClient(): Client {
+    if (!this.client) throw new Error("Not connected");
+    return this.client;
+  }
+
+  /** Map of tool name -> ui:// resource URI (MCP Apps metadata). */
+  toolViewUris: Record<string, string> = {};
+
+  async readResource(uri: string): Promise<{ text: string; mimeType: string } | null> {
+    if (!this.client) throw new Error("Not connected");
+    const res = await this.client.readResource({ uri });
+    const first = res.contents?.[0] as { text?: string; mimeType?: string } | undefined;
+    if (!first?.text) return null;
+    return { text: first.text, mimeType: first.mimeType ?? "text/html" };
   }
 
   async callTool(name: string, args: Record<string, unknown>): Promise<ToolResult> {
